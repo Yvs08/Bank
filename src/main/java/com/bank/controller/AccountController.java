@@ -36,11 +36,6 @@ public class AccountController {
         return ResponseEntity.ok(statement);
     }
 
-    @GetMapping("test")
-    public ResponseEntity<String> test() {
-       // List<Transaction> statement = accountService.getStatement(id);
-        return ResponseEntity.ok("statement");
-    }
 
     @PostMapping("")
     public ResponseEntity<Account> createAccount(@RequestParam(defaultValue = "0.0") double initialBalance) {
